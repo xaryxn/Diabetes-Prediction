@@ -56,4 +56,21 @@ Diabetes is one of the fastest-growing health threats worldwide. Early detection
 ---
 
 ## 🏗️ Project Architecture
-
+   
+diabetes-predictor/
+│
+├── data/                      # Contains the dataset
+│   └── diabetes.csv
+│
+├── models/                    # Stores the trained SVM model and scaler
+│   ├── svm_model.pkl
+│   └── scaler.pkl
+│
+├── src/                       # Source code for each logical module
+│   ├── preprocess.py          # Data loading, cleaning, and feature scaling
+│   ├── train.py               # Model training and evaluation
+│   └── predict.py             # Loads model and scaler for inference
+│
+├── main.py                    # Entry point for making predictions via CLI
+├── requirements.txt           # List of dependencies
+└── README.md                  # Project documentation
